@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="icon" href="favicon.ico">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sweden</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background: #eef5fb;
+                color: #1a1a1a;
+            }
+            .container {
+                max-width: 940px;
+                margin: 40px auto;
+                padding: 26px;
+                background: #fff;
+                border-radius: 16px;
+                box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+            }
+            .header {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 22px;
+                margin-bottom: 28px;
+            }
+            .nav-bar {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                padding: 14px 0 18px;
+                margin-bottom: 20px;
+                background: #fff;
+                border-bottom: 1px solid #e0e0e0;
+            }
+            .nav-link {
+                display: inline-block;
+                padding: 10px 18px;
+                background: #1976d2;
+                color: #fff;
+                border-radius: 8px;
+                text-decoration: none;
+                font-weight: 600;
+                transition: background 0.2s ease;
+            }
+            .nav-link:hover {
+                background: #145ea8;
+            }
+            .nav-link.active {
+                background: #0d47a1;
+            }
+            .flag-block {
+                width: 220px;
+                height: 130px;
+                border-radius: 16px;
+                overflow: hidden;
+                border: 1px solid #d0d7e1;
+                box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.03);
+                background: #005293;
+                position: relative;
+            }
+            .flag-cross {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+            .flag-cross::before,
+            .flag-cross::after {
+                content: "";
+                position: absolute;
+                background: #ffec00;
+            }
+            .flag-cross::before {
+                left: 38px;
+                top: 0;
+                width: 24px;
+                height: 100%;
+            }
+            .flag-cross::after {
+                left: 0;
+                top: 42px;
+                width: 100%;
+                height: 24px;
+            }
+            .title {
+                flex: 1;
+                min-width: 240px;
+            }
+            .title h1 {
+                margin: 0 0 10px;
+                font-size: 2rem;
+            }
+            .title p {
+                margin: 0;
+                line-height: 1.7;
+                color: #45556b;
+            }
+            .content {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 22px;
+            }
+            .panel {
+                background: #f9fbff;
+                border: 1px solid #dbe4ed;
+                border-radius: 14px;
+                padding: 20px;
+            }
+            .panel h2 {
+                margin-top: 0;
+                margin-bottom: 14px;
+                font-size: 1.25rem;
+            }
+            .panel p,
+            .panel ul {
+                margin: 0;
+                color: #333;
+                line-height: 1.7;
+            }
+            .panel ul {
+                padding-left: 20px;
+            }
+            .panel li {
+                margin-bottom: 10px;
+            }
+            @media (max-width: 768px) {
+                .content,
+                .header {
+                    grid-template-columns: 1fr;
+                }
+                .header {
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="nav-bar">
+                <a class="nav-link" href="biodata.html">Biodata</a>
+                <a class="nav-link" href="place1.html">Germany</a>
+                <a class="nav-link active" href="place2.html">Sweden</a>
+            </nav>
+            <div class="header">
+                <div class="flag-block">
+                    <div class="flag-cross"></div>
+                </div>
+                <div class="title">
+                    <h1>Sweden</h1>
+                    <p>Sweden is a Nordic country in Northern Europe known for its forests, lakes, and innovative design. It is also recognized for its social equality, environmental focus, and welcoming culture.</p>
+                </div>
+            </div>
+            <div class="content">
+                <section class="panel">
+                    <h2>Country Overview</h2>
+                    <ul>
+                        <li>Capital: Stockholm</li>
+                        <li>Population: 10 million (approx.)</li>
+                        <li>Language: Swedish</li>
+                        <li>Currency: Swedish krona (SEK)</li>
+                    </ul>
+                </section>
+                <section class="panel">
+                    <h2>Culture & People</h2>
+                    <p>Swedes value openness, work-life balance, and a strong connection to nature. The culture often emphasizes equality, innovation, and a calm, organized lifestyle.</p>
+                    <p>Common traditions include enjoying fika breaks, spending time outdoors, and celebrating seasonal holidays with family and friends.</p>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

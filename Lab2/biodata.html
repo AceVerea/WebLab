@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="icon" href="favicon.ico">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biodata</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background: #f1f1f1;
+                color: #333;
+            }
+            .page {
+                max-width: 1000px;
+                margin: 24px auto;
+                padding: 24px;
+                background: #fff;
+                border-radius: 10px;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            }
+            .page h1,
+            .page h2,
+            .page h3 {
+                margin-top: 0;
+            }
+            .header {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 20px;
+                border-bottom: 2px solid #e0e0e0;
+                padding-bottom: 20px;
+                margin-bottom: 24px;
+            }
+            .profile-photo {
+                width: 140px;
+                height: 140px;
+                border-radius: 16px;
+                object-fit: cover;
+                background: #d9d9d9;
+                display: block;
+            }
+            .profile-summary {
+                flex: 1;
+                min-width: 220px;
+            }
+            .profile-summary p {
+                line-height: 1.6;
+                margin: 8px 0;
+            }
+            .content-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 24px;
+            }
+            .panel {
+                background: #fafafa;
+                border: 1px solid #e0e0e0;
+                border-radius: 12px;
+                padding: 18px;
+            }
+            .panel h2 {
+                margin-bottom: 14px;
+                font-size: 1.2rem;
+            }
+            .info-list,
+            .skills-list {
+                list-style: none;
+                padding-left: 0;
+                margin: 0;
+            }
+            .info-list li,
+            .skills-list li {
+                margin-bottom: 10px;
+                line-height: 1.5;
+            }
+            .info-label {
+                font-weight: 700;
+            }
+            .experience-table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            .experience-table th,
+            .experience-table td {
+                padding: 10px;
+                border: 1px solid #ddd;
+                text-align: left;
+            }
+            .experience-table th {
+                background: #f2f2f2;
+            }
+            .form-group {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                margin-bottom: 16px;
+            }
+            .form-group input,
+            .form-group textarea {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 6px;
+                font-size: 1rem;
+                width: 100%;
+            }
+            .form-group textarea {
+                resize: vertical;
+                min-height: 100px;
+            }
+            .button {
+                display: inline-block;
+                padding: 10px 18px;
+                background: #1976d2;
+                color: #fff;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                text-decoration: none;
+                font-weight: 600;
+            }
+            .nav-bar {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                padding: 14px 0 18px;
+                margin-bottom: 20px;
+                background: #fff;
+                border-bottom: 1px solid #e0e0e0;
+            }
+            .nav-link {
+                display: inline-block;
+                padding: 10px 18px;
+                background: #1976d2;
+                color: #fff;
+                border-radius: 8px;
+                text-decoration: none;
+                font-weight: 600;
+                transition: background 0.2s ease;
+            }
+            .nav-link:hover {
+                background: #145ea8;
+            }
+            .nav-link.active {
+                background: #0d47a1;
+            }
+            @media (max-width: 760px) {
+                .content-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="nav-bar">
+            <a class="nav-link active" href="biodata.html">Biodata</a>
+            <a class="nav-link" href="place1.html">Germany</a>
+            <a class="nav-link" href="place2.html">Sweden</a>
+        </nav>
+        <div class="page">
+            <div class="header">
+                <img class="profile-photo" src="profile.jpg" alt="Profile photo">
+                <div class="profile-summary">
+                    <h1>Daniel Fandey</h1>
+                    <p><strong>IT Student</strong></p>
+                    <p>I like to play video games and have a good time!</p>
+                </div>
+            </div>
+
+            <div class="content-grid">
+                <section class="panel">
+                    <h2>Personal Details</h2>
+                    <ul class="info-list">
+                        <li><span class="info-label">Date of Birth:</span> 11 October 2003</li>
+                        <li><span class="info-label">Email:</span> daniyelfandey@gmail.com</li>
+                        <li><span class="info-label">Phone:</span> +60 10-3531317</li>
+                        <li><span class="info-label">Address:</span> Shah Ale, Selangor</li>
+                    </ul>
+
+                    <h2>Skills</h2>
+                    <ul class="skills-list">
+                        <li>CS2, Valorant, R6S, Apex Legend</li>
+                        <li>WC3. SC2. AoE4</li>
+                        <li>Tetris, Chess</li>
+                    </ul>
+
+                    <h2>Interests</h2>
+                    <ol>
+                        <li>Gaming</li>
+                        <li>Movies</li>
+                        <li>Relaxing</li>
+                    </ol>
+                </section>
+
+                <section class="panel">
+                    <h2>About Me</h2>
+                    <p>I am a passionate IT student with a keen interest in web development and gaming. I enjoy exploring new technologies and constantly strive to improve my skills.</p>
+
+                    <h2>Experience</h2>
+                    <table class="experience-table">
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>Role</th>
+                                <th>Company</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2023</td>
+                                <td>Intern</td>
+                                <td>IPSis UiTM</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+<!--                    
+                    <h2>Contact Form</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Write a short message"></textarea>
+                        </div>
+                        <button type="submit" class="button">Send Message</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
+-->
+

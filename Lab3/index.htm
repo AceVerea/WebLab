@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - JDM Marketplace</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .hero {
+      background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+      padding: 80px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3.5em;
+      margin: 0 0 20px 0;
+      color: #ff6b6b;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+
+    .hero p {
+      font-size: 1.3em;
+      color: #ccc;
+      margin-bottom: 40px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      padding: 15px 40px;
+      background: #ff6b6b;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+      border: none;
+    }
+
+    .cta-btn:hover {
+      background: #ff5252;
+      transform: scale(1.05);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .feature-card {
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      border: 2px solid #333;
+      transition: border-color 0.3s;
+    }
+
+    .feature-card:hover {
+      border-color: #ff6b6b;
+    }
+
+    .feature-card h3 {
+      color: #ff6b6b;
+      margin-top: 15px;
+    }
+
+    .feature-card p {
+      color: #999;
+      line-height: 1.6;
+    }
+
+    .icon {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5em;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>JDM MARKETPLACE</h1>
+  <p>Your ultimate destination for legendary Japanese Domestic Market cars. Find your dream ride today.</p>
+  <a href="market.htm" class="cta-btn">Browse Marketplace</a>
+</div>
+
+<div class="features">
+  <div class="feature-card">
+    <div class="icon">🚗</div>
+    <h3>Premium Selection</h3>
+    <p>Curated collection of the most iconic JDM cars from the golden era of Japanese automotive excellence.</p>
+  </div>
+
+  <div class="feature-card">
+    <div class="icon">📊</div>
+    <h3>Detailed Specs</h3>
+    <p>Complete specifications, engine details, and performance metrics for every vehicle in our catalog.</p>
+  </div>
+
+  <div class="feature-card">
+    <div class="icon">⚡</div>
+    <h3>Legendary Performance</h3>
+    <p>Experience the power and handling of some of the most sought-after performance vehicles ever made.</p>
+  </div>
+</div>
+
+</body>
+</html>

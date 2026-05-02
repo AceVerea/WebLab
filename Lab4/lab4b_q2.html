@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON Book Details</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h2>Check your browser's Developer Console!</h2>
+    <p>Right-click -> Inspect -> Console to see the outputs.</p>
+
+    <script>
+        $(document).ready(function() {
+            // Fetch the JSON file using jQuery
+            $.getJSON("books.json", function(data) {
+                // The title of the first book
+                console.log("Title of first book: " + data[0].title);
+                
+                // The author of the second book
+                console.log("Author of second book: " + data[1].author);
+                
+                // The genres of all books
+                console.log("Genres of all books:");
+                $.each(data, function(index, book) {
+                    console.log(book.title + ": " + book.genres.join(", "));
+                });
+            }).fail(function() {
+                console.log("An error occurred fetching the JSON file. Note: This needs to be run on a local server to avoid CORS issues.");
+            });
+        });
+    </script>
+</body>
+</html>
