@@ -1,0 +1,151 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFDE8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Form Styles */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't mess up width */
+}
+
+input[type="submit"] {
+    width: 100%;
+}
+
+/* Table Styles */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Links inside tables */
+td a {
+    text-decoration: none;
+    color: #007BFF;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* Logo Styles */
+.logo-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    /*max-height: 80px; /* This prevents the image from being too huge             <------------------------  SIZE         */
+    width: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Adds a smooth animation */
+}
+
+/* Makes the logo "pop" slightly when you hover your mouse over it */
+.logo-container img:hover {
+    transform: scale(1.05); 
+}
+
+/* Success Message Banner */
+.success-banner {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+    font-weight: bold;
+}
